@@ -7,7 +7,7 @@ import UserEdit from "./components/user/UserEdit.vue";
 export const routes = [
   { path: "", component: Home },
   {
-    path: "/user/:id",
+    path: "/user",
     component: User,
     props: true,
     children: [
