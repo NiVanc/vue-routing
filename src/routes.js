@@ -28,4 +28,5 @@ export const routes = [
     ],
   },
   { path: "/redirect-me", redirect: { name: "home" } },
+  { path: "*", redirect: "/" },
 ];
