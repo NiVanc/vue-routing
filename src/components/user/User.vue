@@ -5,6 +5,8 @@
     <p>Loaded id: {{ id }}</p>
     <hr />
     <button class="btn btn-primary" @click="navigateToTome">Go to home</button>
+    <hr />
+    <router-view></router-view>
   </div>
 </template>
 
