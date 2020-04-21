@@ -3,5 +3,10 @@
     <h3>Some User Details</h3>
     <hr />
     <p>Loaded user id: #{{ $route.params.id }}</p>
+    <router-link
+      tag="button"
+      :to="'/user/' + $route.params.id + '/edit'"
+      class="btn btn-primary"
+    >Edit user</router-link>
   </div>
 </template>
