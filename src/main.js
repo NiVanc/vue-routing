@@ -19,6 +19,14 @@ const router = new VueRouter({
   },
 });
 
+router.beforeEach((to, from, next) => {
+  console.log("beforeEach");
+
+  // next(false);
+  // next({ name: "home" });
+  next();
+});
+
 new Vue({
   el: "#app",
   router,

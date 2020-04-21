@@ -8,3 +8,12 @@
     <p id="data">Here is some additional data</p>
   </div>
 </template>
+
+<script>
+export default {
+  beforeRouteEnter(to, from, next) {
+    console.log("beforeRouteEnter");
+    next();
+  }
+};
+</script>
