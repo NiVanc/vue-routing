@@ -15,7 +15,7 @@ export default {
   props: ["id"],
   methods: {
     navigateToTome() {
-      this.$router.push("/");
+      this.$router.push({ name: "home" });
     }
   }
 };
